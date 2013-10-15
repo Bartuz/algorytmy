@@ -1,4 +1,4 @@
-## It's my collection of algorythms that I tried ti trabslate from steps-to-steps explanation to C++ code.
+## It's my collection of algorythms that I tried to translate from step-to-step explanation to C++ code.
 ## Here is short guide how to use uploaded files.
 
 ## -  Sieve of Eratosthenes ##
