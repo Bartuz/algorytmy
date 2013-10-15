@@ -8,4 +8,4 @@
     - It outputs result to 'result.txt'. 
     - By default it outputs prime numbers from 1-100.
     - You can define different range of numbers. 
-        - To do so add argument to 'make' command *(this way - **'./sieve_of_eratosthenes X'**)* where **X** is maximum number in **1-X** range.
+        - To do so add argument to run command *(this way - **'./sieve_of_eratosthenes X'**)* where **X** is maximum number in **1-X** range.

@@ -2,9 +2,9 @@
 #include <fstream>
 using namespace std;
 int main(int argc, char *argv[]) {
-	int SIZE; //rozmiar tablicy (odpowiadający liczbom od 1-SIZE).
+	int SIZE; //rozmiar tablicy (odpowiadający liczbom od 1 do SIZE).
 	if (argc > 1) { // jeśli liczba argumentów więksa od 1.
-		SIZE = strtol(argv[1],NULL,10)+1; //to rozmiar tablicy = argument.
+		SIZE = strtol(argv[1],NULL,10)+1; // to rozmiar tablicy = argument.
 	} else {
 		SIZE = 101; // jeśli nie było argumentów to rozmiar = 100.
 	}
@@ -14,9 +14,9 @@ int main(int argc, char *argv[]) {
 	}
 	for (int i = 2; i <= SIZE/2; i++) {
 		if (tab[i] == 0) { // jeśli już ten element został 'wykreślony'
-			continue; // pomijam kroki dla danego elementu tab[].
+			continue; // pomijam kroki dla danego elementu i.
 		}
-		for (int j = 2; j <= SIZE/i; j++ ) { // ustawiam mnożnik dla liczenia wielokrotności 'i'. Starczy wykonać operacje SIZE/i. Dla przykładu będziemy liczyć wielokrotności 3 w rozmiarze tablicy '100' dokładnie 33 razy, ponieważ 100/3=33 (int zaokrągla w dół wynik).
+		for (int j = 2; j <= SIZE/i; j++ ) { // ustawiam mnożnik dla liczenia wielokrotności 'i'. Starczy wykonać liczbe operacji równą SIZE/i. Dla przykładu będziemy liczyć wielokrotności 3 w rozmiarze tablicy '100' dokładnie 33 razy, ponieważ 100/3=33 (int zaokrągla w dół wynik).
 			tab[i*j] = 0; // ustawiam wielokrotności na 0.
 			}
 	}
