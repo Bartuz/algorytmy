@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
 	}
 	tab[0] = 0; // 0 nie jest liczba pierwszą, więc daje 0
 	tab[1] = 0; // 1 nie jest liczbą pierwszą, więc daje 0
-	ofstream file("wynik.txt");
+	ofstream file("result.txt");
 	for (int i = 0; i < SIZE; i++) {
 		if (tab[i]==1) {
 			file << i << " ";
