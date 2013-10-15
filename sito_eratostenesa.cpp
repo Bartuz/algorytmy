@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 using namespace std;
-const int SIZE = 102;
+const int SIZE = 100001;
 int main(int argc, char *argv[]) {
 	int tab[SIZE];
 	for (int i = 0; i < SIZE; i++) {
