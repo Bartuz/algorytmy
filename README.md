@@ -1,6 +1,12 @@
 # It's my collection of algorythms that I tried translated from steps to C++ code.
-
 ---
+## Here is short guide how to use uploaded files.
 
-# Here is short guide how to use uploaded files.
-- Sieve of Eratosthenes - run in via terminal using *'make sieve_of_eratosthenes'*. It will output scores to 'result.txt'. **You can add argument to find prime numbers from longer than 100 range**. To do so run sieve_of_eratosthenes in this way *'make sieve_of_eratosthenes X'* where X is any number like '1', '10', '137', '9999'.
+- ###Sieve of Eratosthenes
+- #### Count prime numbers in range 1-X where X is any number.
+- ![Gif presenting algorythm](http://upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif "Sieve of Eratosthenes in GIF")
+    - Run it in terminal **'make sieve_of_eratosthenes'**.
+    - It outputs result to 'result.txt'. 
+    - By default it outputs prime numbers from 1-100.
+    - You can define different range of numbers. 
+        - To do so add argument to 'make' command *(this way - **'make sieve_of_eratosthenes X'**)* where **X** is maximum number in **1-X** range.
