@@ -1,34 +1,32 @@
 #include <iostream>
 #include <cstdlib>
+#include <fstream>
 using namespace std;
-const int SIZE = 100001;
 int main(int argc, char *argv[]) {
+	int SIZE;
+	if (argc > 1) {
+		SIZE = strtol(argv[1],NULL,10)+1;
+	} else {
+		SIZE = 100;
+	}
 	int tab[SIZE];
 	for (int i = 0; i < SIZE; i++) {
 		tab[i] = 1;
 	}
 	for (int i = 2; i <= SIZE/2; i++) {
 		if (tab[i] == 0) {
-			cout << "\ncontinue dla i = " << i << endl;
 			continue;
 		}
-		cout << "\nstart dla i = " << i <<  endl;
 		for (int j = 2; j <= SIZE/i; j++ ) {
-		cout << "\ttab[" << i*j << "]" << endl;
 			tab[i*j] = 0;
 			}
-		cout << "koniec dla i = " << i << endl;
 	}
-	tab[0] = 0;
-	tab[1] = 0;
-	cout << "\nwynik: " << endl;
-	for (int i = 0; i < SIZE; i++) {
-		cout << "tab[" << i << "] = " << tab[i] << endl; ;
-	}
-	cout << "liczby pierwsze to :" << endl;
+	tab[0] = 0; // 0 nie jest liczba pierwszą, więc daje 0
+	tab[1] = 0; // 1 nie jest liczbą pierwszą, więc daje 0
+	ofstream file("wynik.txt");
 	for (int i = 0; i < SIZE; i++) {
 		if (tab[i]==1) {
-			cout << i << " ";
+			file << i << " ";
 		}
 	}
 }
