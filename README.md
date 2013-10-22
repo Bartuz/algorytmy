@@ -9,3 +9,6 @@
     - By default it outputs prime numbers from 1-100.
     - You can define different range of numbers. 
         - To do so add argument to run command *(this way - **'./sieve_of_eratosthenes X'**)* where **X** is maximum number in **1-X** range.
+
+## - Leader is series ##
+- Found element that in series of N elements that occurs for more than N/2 times

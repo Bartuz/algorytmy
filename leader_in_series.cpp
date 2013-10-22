@@ -8,13 +8,16 @@ int main(int argc, char *argv[]) {
 	k = 1;
 	switch (argc) {
 		case 3:
+			n = strtol(argv[1], NULL, 10);
 			seed = strtol(argv[2], NULL, 10);
+			break;
 		case 2:
 			n = strtol(argv[1], NULL, 10);
+			seed = 3;
 			break;
 		default:
-			seed = 3;
 			n = 10;
+			seed = 3;
 	}
 	int T[n];
 	fillArray(T, n, seed);
