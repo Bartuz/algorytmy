@@ -26,12 +26,10 @@ int main(int argc, char *argv[]) {
 		if (k==0) {
 			k=1;
 			leader = T[i];
-		}
-		if (T[i]==leader) {
-			k++;
-		} else {
-			k--;
-		}
+		} else if (T[i]==leader) 
+				k++;
+			else
+				k--;
 	}
 	fout << "For an array of [";
 	for (int i = 0; i < n; i++) {
